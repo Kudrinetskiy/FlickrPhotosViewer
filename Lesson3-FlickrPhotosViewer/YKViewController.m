@@ -43,7 +43,6 @@
     self.searchOptions = [[PSRFlickrSearchOptions alloc] initWithTags:searchTags];
     self.searchOptions.itemsLimit = 99;
     self.searchOptions.extra = @[@"url_c"];
-    self.infoes = [[PSRFlickrAPI new] requestPhotosWithOptions:self.searchOptions];
     
     [self loadPhotos];
 }
@@ -59,6 +58,8 @@
 {
     dispatch_queue_t getPhotoQueue = dispatch_queue_create("getPhotoQueue", nil);
     dispatch_async(getPhotoQueue, ^{
+        self.infoes = [[PSRFlickrAPI new] requestPhotosWithOptions:self.searchOptions];
+
         if ([self.infoes count] > 0) {
             self.images = [NSMutableArray arrayWithCapacity:[self.infoes count]];
             

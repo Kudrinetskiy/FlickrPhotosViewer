@@ -64,6 +64,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     YKPhotoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    cell.imageView.image = nil;
     
     if (self.images[indexPath.row] != [NSNull null]) {
         cell.imageView.image = self.images[indexPath.row];
