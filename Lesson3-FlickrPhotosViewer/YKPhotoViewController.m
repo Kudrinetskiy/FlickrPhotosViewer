@@ -22,7 +22,7 @@
     [super viewDidLoad];
 }
 
-#pragma mark - Segue
+#pragma mark - Segue 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UICollectionViewCell *)sender
 {
