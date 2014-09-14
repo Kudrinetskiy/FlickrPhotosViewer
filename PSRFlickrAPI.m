@@ -60,6 +60,11 @@ const NSString * PSRDefaultApiUrl = @"https://api.flickr.com/services/rest/?";
 {
     NSData *response = [NSData dataWithContentsOfURL:[NSURL URLWithString:requestString]];
     
+    if (!response) {
+        NSLog(@"No response!");
+        return nil;
+    }
+    
     NSLog(@"result bytes:%lu",(unsigned long)response.length);
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
     return json;

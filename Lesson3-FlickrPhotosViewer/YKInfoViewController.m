@@ -56,8 +56,6 @@
         self.imageView.alpha = 1;
         self.textView.alpha = 1;
     }];
-    
-    
 }
 
 @end
