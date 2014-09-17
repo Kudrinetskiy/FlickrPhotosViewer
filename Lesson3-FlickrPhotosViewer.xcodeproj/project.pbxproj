@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8400907519BA57AC00D481D1 /* YKPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400907419BA57AC00D481D1 /* YKPhotoViewController.m */; };
-		8400908019BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400907919BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */; };
-		8400908119BA635800D481D1 /* PSRFlickrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400907B19BA635800D481D1 /* PSRFlickrAPI.m */; };
-		8400908219BA635800D481D1 /* PSRFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400907D19BA635800D481D1 /* PSRFlickrPhoto.m */; };
-		8400908319BA635800D481D1 /* PSRFlickrSearchOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400907F19BA635800D481D1 /* PSRFlickrSearchOptions.m */; };
 		840881BE19BBD19200E79BD0 /* YKInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840881BD19BBD19200E79BD0 /* YKInfoViewController.m */; };
 		84581FFE19BA447C00853C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84581FFD19BA447C00853C15 /* Foundation.framework */; };
 		8458200019BA447C00853C15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84581FFF19BA447C00853C15 /* CoreGraphics.framework */; };
@@ -28,6 +24,15 @@
 		8458202719BA447C00853C15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8458202519BA447C00853C15 /* InfoPlist.strings */; };
 		8458202919BA447C00853C15 /* Lesson3_FlickrPhotosViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458202819BA447C00853C15 /* Lesson3_FlickrPhotosViewerTests.m */; };
 		8458203419BA4B1100853C15 /* YKPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458203319BA4B1100853C15 /* YKPhotoCell.m */; };
+		8494919419C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494918D19C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */; };
+		8494919519C9A70C0079C2ED /* PSRFlickrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494918F19C9A70C0079C2ED /* PSRFlickrAPI.m */; };
+		8494919619C9A70C0079C2ED /* PSRFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919119C9A70C0079C2ED /* PSRFlickrPhoto.m */; };
+		8494919719C9A70C0079C2ED /* PSRFlickrSearchOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919319C9A70C0079C2ED /* PSRFlickrSearchOptions.m */; };
+		849491A019C9A7320079C2ED /* PhotoOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919919C9A7320079C2ED /* PhotoOwner.m */; };
+		849491A119C9A7320079C2ED /* PSRPhotoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919B19C9A7320079C2ED /* PSRPhotoData.m */; };
+		849491A219C9A7320079C2ED /* PSRPhotoData+YKFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919D19C9A7320079C2ED /* PSRPhotoData+YKFetch.m */; };
+		849491A319C9A7320079C2ED /* PSRTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494919F19C9A7320079C2ED /* PSRTag.m */; };
+		849605CE19C91E6A00263F10 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 849605CC19C91E6A00263F10 /* DataModel.xcdatamodeld */; };
 		D6F4A107049A49A091F146C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D2CA9909354982BCE2670A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,14 +51,6 @@
 		25D2CA9909354982BCE2670A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8400907319BA57AC00D481D1 /* YKPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKPhotoViewController.h; sourceTree = "<group>"; };
 		8400907419BA57AC00D481D1 /* YKPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKPhotoViewController.m; sourceTree = "<group>"; };
-		8400907819BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRClassWhichPerformsSomethingWithCompletionBlock.h; sourceTree = "<group>"; };
-		8400907919BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRClassWhichPerformsSomethingWithCompletionBlock.m; sourceTree = "<group>"; };
-		8400907A19BA635800D481D1 /* PSRFlickrAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRFlickrAPI.h; sourceTree = "<group>"; };
-		8400907B19BA635800D481D1 /* PSRFlickrAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRFlickrAPI.m; sourceTree = "<group>"; };
-		8400907C19BA635800D481D1 /* PSRFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRFlickrPhoto.h; sourceTree = "<group>"; };
-		8400907D19BA635800D481D1 /* PSRFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRFlickrPhoto.m; sourceTree = "<group>"; };
-		8400907E19BA635800D481D1 /* PSRFlickrSearchOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRFlickrSearchOptions.h; sourceTree = "<group>"; };
-		8400907F19BA635800D481D1 /* PSRFlickrSearchOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRFlickrSearchOptions.m; sourceTree = "<group>"; };
 		840881BC19BBD19200E79BD0 /* YKInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKInfoViewController.h; sourceTree = "<group>"; };
 		840881BD19BBD19200E79BD0 /* YKInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKInfoViewController.m; sourceTree = "<group>"; };
 		84581FFA19BA447C00853C15 /* Lesson3-FlickrPhotosViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson3-FlickrPhotosViewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +74,23 @@
 		8458202819BA447C00853C15 /* Lesson3_FlickrPhotosViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson3_FlickrPhotosViewerTests.m; sourceTree = "<group>"; };
 		8458203219BA4B1100853C15 /* YKPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKPhotoCell.h; sourceTree = "<group>"; };
 		8458203319BA4B1100853C15 /* YKPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKPhotoCell.m; sourceTree = "<group>"; };
+		8494918C19C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRClassWhichPerformsSomethingWithCompletionBlock.h; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRClassWhichPerformsSomethingWithCompletionBlock.h"; sourceTree = "<group>"; };
+		8494918D19C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRClassWhichPerformsSomethingWithCompletionBlock.m; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRClassWhichPerformsSomethingWithCompletionBlock.m"; sourceTree = "<group>"; };
+		8494918E19C9A70C0079C2ED /* PSRFlickrAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRFlickrAPI.h; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrAPI.h"; sourceTree = "<group>"; };
+		8494918F19C9A70C0079C2ED /* PSRFlickrAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRFlickrAPI.m; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrAPI.m"; sourceTree = "<group>"; };
+		8494919019C9A70C0079C2ED /* PSRFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRFlickrPhoto.h; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrPhoto.h"; sourceTree = "<group>"; };
+		8494919119C9A70C0079C2ED /* PSRFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRFlickrPhoto.m; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrPhoto.m"; sourceTree = "<group>"; };
+		8494919219C9A70C0079C2ED /* PSRFlickrSearchOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRFlickrSearchOptions.h; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrSearchOptions.h"; sourceTree = "<group>"; };
+		8494919319C9A70C0079C2ED /* PSRFlickrSearchOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRFlickrSearchOptions.m; path = "Lesson3-FlickrPhotosViewer/FlickrAPI/PSRFlickrSearchOptions.m"; sourceTree = "<group>"; };
+		8494919819C9A7320079C2ED /* PhotoOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoOwner.h; path = "Lesson3-FlickrPhotosViewer/CoreData/PhotoOwner.h"; sourceTree = "<group>"; };
+		8494919919C9A7320079C2ED /* PhotoOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoOwner.m; path = "Lesson3-FlickrPhotosViewer/CoreData/PhotoOwner.m"; sourceTree = "<group>"; };
+		8494919A19C9A7320079C2ED /* PSRPhotoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRPhotoData.h; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRPhotoData.h"; sourceTree = "<group>"; };
+		8494919B19C9A7320079C2ED /* PSRPhotoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRPhotoData.m; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRPhotoData.m"; sourceTree = "<group>"; };
+		8494919C19C9A7320079C2ED /* PSRPhotoData+YKFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PSRPhotoData+YKFetch.h"; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRPhotoData+YKFetch.h"; sourceTree = "<group>"; };
+		8494919D19C9A7320079C2ED /* PSRPhotoData+YKFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PSRPhotoData+YKFetch.m"; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRPhotoData+YKFetch.m"; sourceTree = "<group>"; };
+		8494919E19C9A7320079C2ED /* PSRTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSRTag.h; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRTag.h"; sourceTree = "<group>"; };
+		8494919F19C9A7320079C2ED /* PSRTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSRTag.m; path = "Lesson3-FlickrPhotosViewer/CoreData/PSRTag.m"; sourceTree = "<group>"; };
+		849605CD19C91E6A00263F10 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +121,14 @@
 		8400908419BA636300D481D1 /* FlickrAPI */ = {
 			isa = PBXGroup;
 			children = (
-				8400907819BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.h */,
-				8400907919BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */,
-				8400907A19BA635800D481D1 /* PSRFlickrAPI.h */,
-				8400907B19BA635800D481D1 /* PSRFlickrAPI.m */,
-				8400907C19BA635800D481D1 /* PSRFlickrPhoto.h */,
-				8400907D19BA635800D481D1 /* PSRFlickrPhoto.m */,
-				8400907E19BA635800D481D1 /* PSRFlickrSearchOptions.h */,
-				8400907F19BA635800D481D1 /* PSRFlickrSearchOptions.m */,
+				8494918C19C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.h */,
+				8494918D19C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.m */,
+				8494918E19C9A70C0079C2ED /* PSRFlickrAPI.h */,
+				8494918F19C9A70C0079C2ED /* PSRFlickrAPI.m */,
+				8494919019C9A70C0079C2ED /* PSRFlickrPhoto.h */,
+				8494919119C9A70C0079C2ED /* PSRFlickrPhoto.m */,
+				8494919219C9A70C0079C2ED /* PSRFlickrSearchOptions.h */,
+				8494919319C9A70C0079C2ED /* PSRFlickrSearchOptions.m */,
 			);
 			name = FlickrAPI;
 			path = ..;
@@ -155,6 +169,7 @@
 		8458200319BA447C00853C15 /* Lesson3-FlickrPhotosViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8494918119C94A270079C2ED /* CoreData */,
 				8400908419BA636300D481D1 /* FlickrAPI */,
 				8458200C19BA447C00853C15 /* YKAppDelegate.h */,
 				8458200D19BA447C00853C15 /* YKAppDelegate.m */,
@@ -164,6 +179,7 @@
 				8458201319BA447C00853C15 /* YKViewController.m */,
 				8400907319BA57AC00D481D1 /* YKPhotoViewController.h */,
 				8400907419BA57AC00D481D1 /* YKPhotoViewController.m */,
+				849605CC19C91E6A00263F10 /* DataModel.xcdatamodeld */,
 				840881BC19BBD19200E79BD0 /* YKInfoViewController.h */,
 				840881BD19BBD19200E79BD0 /* YKInfoViewController.m */,
 				8458200F19BA447C00853C15 /* Main.storyboard */,
@@ -200,6 +216,22 @@
 				8458202519BA447C00853C15 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8494918119C94A270079C2ED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8494919819C9A7320079C2ED /* PhotoOwner.h */,
+				8494919919C9A7320079C2ED /* PhotoOwner.m */,
+				8494919A19C9A7320079C2ED /* PSRPhotoData.h */,
+				8494919B19C9A7320079C2ED /* PSRPhotoData.m */,
+				8494919C19C9A7320079C2ED /* PSRPhotoData+YKFetch.h */,
+				8494919D19C9A7320079C2ED /* PSRPhotoData+YKFetch.m */,
+				8494919E19C9A7320079C2ED /* PSRTag.h */,
+				8494919F19C9A7320079C2ED /* PSRTag.m */,
+			);
+			name = CoreData;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,16 +367,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849605CE19C91E6A00263F10 /* DataModel.xcdatamodeld in Sources */,
+				8494919619C9A70C0079C2ED /* PSRFlickrPhoto.m in Sources */,
+				849491A319C9A7320079C2ED /* PSRTag.m in Sources */,
+				8494919719C9A70C0079C2ED /* PSRFlickrSearchOptions.m in Sources */,
+				849491A119C9A7320079C2ED /* PSRPhotoData.m in Sources */,
+				8494919419C9A70C0079C2ED /* PSRClassWhichPerformsSomethingWithCompletionBlock.m in Sources */,
+				8494919519C9A70C0079C2ED /* PSRFlickrAPI.m in Sources */,
 				8458203419BA4B1100853C15 /* YKPhotoCell.m in Sources */,
 				8458200E19BA447C00853C15 /* YKAppDelegate.m in Sources */,
-				8400908319BA635800D481D1 /* PSRFlickrSearchOptions.m in Sources */,
 				8458201419BA447C00853C15 /* YKViewController.m in Sources */,
+				849491A019C9A7320079C2ED /* PhotoOwner.m in Sources */,
 				8458200A19BA447C00853C15 /* main.m in Sources */,
-				8400908119BA635800D481D1 /* PSRFlickrAPI.m in Sources */,
-				8400908219BA635800D481D1 /* PSRFlickrPhoto.m in Sources */,
-				8400908019BA635800D481D1 /* PSRClassWhichPerformsSomethingWithCompletionBlock.m in Sources */,
 				840881BE19BBD19200E79BD0 /* YKInfoViewController.m in Sources */,
 				8400907519BA57AC00D481D1 /* YKPhotoViewController.m in Sources */,
+				849491A219C9A7320079C2ED /* PSRPhotoData+YKFetch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +604,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		849605CC19C91E6A00263F10 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				849605CD19C91E6A00263F10 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 849605CD19C91E6A00263F10 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84581FF219BA447C00853C15 /* Project object */;
 }

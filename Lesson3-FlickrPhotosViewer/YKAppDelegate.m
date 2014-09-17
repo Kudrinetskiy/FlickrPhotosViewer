@@ -7,12 +7,13 @@
 //
 
 #import "YKAppDelegate.h"
+#import "CoreData+MagicalRecord.h"
 
 @implementation YKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"DataModel"];
     return YES;
 }
 							

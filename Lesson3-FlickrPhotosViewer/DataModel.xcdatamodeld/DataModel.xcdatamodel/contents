@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PhotoOwner" representedClassName="PhotoOwner" syncable="YES">
+        <attribute name="idValue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PSRPhotoData" inverseName="owner" inverseEntity="PSRPhotoData" syncable="YES"/>
+    </entity>
+    <entity name="PSRPhotoData" representedClassName="PSRPhotoData" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fullImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoOwner" inverseName="photo" inverseEntity="PhotoOwner" syncable="YES"/>
+        <relationship name="tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PSRTag" inverseName="photo" inverseEntity="PSRTag" syncable="YES"/>
+    </entity>
+    <entity name="PSRTag" representedClassName="PSRTag" syncable="YES">
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PSRPhotoData" inverseName="tag" inverseEntity="PSRPhotoData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PhotoOwner" positionX="396" positionY="-79" width="128" height="73"/>
+        <element name="PSRPhotoData" positionX="567" positionY="-139" width="128" height="148"/>
+        <element name="PSRTag" positionX="745" positionY="-64" width="128" height="73"/>
+    </elements>
+</model>

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F3561402CFD4564AE8F815D</key>
+		<key>64CA85ED93BF47D5809B3266</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2C525C45A364B359ECD3AC1</key>
+		<key>7AE6B01D5393401CAB3D8F79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A30D8F368D42458DAD61C8A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
