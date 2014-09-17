@@ -119,17 +119,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-L7-Mtr">
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-L7-Mtr">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-Oj-1mu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-Oj-1mu">
                                 <rect key="frame" x="20" y="382" width="280" height="78"/>
                                 <color key="backgroundColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="nNJ-vF-AZy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dGy-w9-9iO" firstAttribute="top" secondItem="Lle-Oj-1mu" secondAttribute="bottom" constant="20" id="RbX-Hr-Zet"/>
+                            <constraint firstItem="lIZ-L7-Mtr" firstAttribute="top" secondItem="iz0-qd-qpN" secondAttribute="bottom" id="bfv-Ng-SGJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lle-Oj-1mu" secondAttribute="trailing" constant="20" id="e6T-Q1-fxZ"/>
+                            <constraint firstItem="Lle-Oj-1mu" firstAttribute="leading" secondItem="kWq-BX-q5h" secondAttribute="leading" constant="20" id="eJS-IK-hBV"/>
+                            <constraint firstAttribute="trailing" secondItem="lIZ-L7-Mtr" secondAttribute="trailing" id="kuR-fl-Lwl"/>
+                            <constraint firstItem="dGy-w9-9iO" firstAttribute="top" secondItem="lIZ-L7-Mtr" secondAttribute="bottom" id="vdJ-Lo-Z49"/>
+                            <constraint firstItem="lIZ-L7-Mtr" firstAttribute="leading" secondItem="kWq-BX-q5h" secondAttribute="leading" id="yDm-xP-Gvm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V6Y-Nd-OW0"/>
                     <connections>

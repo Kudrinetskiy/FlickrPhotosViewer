@@ -29,13 +29,13 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSIndexPath * indexPath = [self.collectionView indexPathForCell:sender];
     YKInfoViewController * ivc = [segue destinationViewController];
-    ivc.navigationItem.title = [NSString stringWithFormat:@"Photo %d", 1 + indexPath.row];
+    ivc.navigationItem.title = [NSString stringWithFormat:@"Photo %d", 1 + (int)indexPath.row];
     
     dispatch_queue_t downloadPhotoQueue = dispatch_queue_create("downloadPhotoQueue", nil);
     dispatch_async(downloadPhotoQueue, ^{
         PSRFlickrPhoto * photo = self.infoes[indexPath.row];
         NSString * info = [photo.info objectForKey:@"title"];
-        NSURL * url = [photo veryHighQualityURL];
+        NSURL * url = [photo highQualityURL];
         NSData * data = [NSData dataWithContentsOfURL:url];
         UIImage * image = [UIImage imageWithData:data];
         

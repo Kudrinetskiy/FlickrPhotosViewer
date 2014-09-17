@@ -76,7 +76,7 @@
                 [self.searchButton setBackgroundImage:image forState:UIControlStateNormal];
                 
                 int i = 0;
-                [self loadPhotoWithSDWebImageAtIndex:i];
+                [self loadMorePhotos];
             });
         }
         else {
@@ -103,9 +103,27 @@
         else {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             [self.delegate addYKViewControllerDidLoadAllPhotos:self];
-            NSLog(@"delegation");
         }
     }];
+}
+
+- (void)loadMorePhotos
+{
+    dispatch_queue_t downloadPhotosQueue = dispatch_queue_create("downloadPhotosQueue", nil);
+    dispatch_async(downloadPhotosQueue, ^{
+        
+        for (int i = 0; i < [self.infoes count]; i++) {
+            NSURL * url = [self.infoes[i] mediumQualityURL];
+            NSData * data = [NSData dataWithContentsOfURL:url];
+            UIImage * image = [UIImage imageWithData:data];
+            [self.images replaceObjectAtIndex:i withObject:image];
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+            [self.delegate addYKViewControllerDidLoadAllPhotos:self];
+        });
+    });
 }
 
 #pragma mark - Segue
