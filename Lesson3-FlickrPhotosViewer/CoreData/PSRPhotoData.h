@@ -18,7 +18,7 @@
 @property (nonatomic) int32_t idValue;
 @property (nonatomic, retain) NSString * thumbURL;
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) PhotoOwner *newRelationship;
+@property (nonatomic, retain) PhotoOwner *owner;
 @property (nonatomic, retain) NSSet *tag;
 @end
 

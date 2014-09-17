@@ -26,7 +26,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UICollectionViewCell *)sender
 {
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSIndexPath * indexPath = [self.collectionView indexPathForCell:sender];
     YKInfoViewController * ivc = [segue destinationViewController];
     ivc.navigationItem.title = [NSString stringWithFormat:@"Photo %d", 1 + (int)indexPath.row];
@@ -40,7 +39,6 @@
         UIImage * image = [UIImage imageWithData:data];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             self.delegate = ivc;
             [self.delegate addYKPhotoViewController:self didGetImage:image info:info];
         });

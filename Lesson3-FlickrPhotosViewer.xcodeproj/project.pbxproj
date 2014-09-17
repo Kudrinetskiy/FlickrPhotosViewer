@@ -171,6 +171,7 @@
 			children = (
 				8494918119C94A270079C2ED /* CoreData */,
 				8400908419BA636300D481D1 /* FlickrAPI */,
+				849605CC19C91E6A00263F10 /* DataModel.xcdatamodeld */,
 				8458200C19BA447C00853C15 /* YKAppDelegate.h */,
 				8458200D19BA447C00853C15 /* YKAppDelegate.m */,
 				8458203219BA4B1100853C15 /* YKPhotoCell.h */,
@@ -179,7 +180,6 @@
 				8458201319BA447C00853C15 /* YKViewController.m */,
 				8400907319BA57AC00D481D1 /* YKPhotoViewController.h */,
 				8400907419BA57AC00D481D1 /* YKPhotoViewController.m */,
-				849605CC19C91E6A00263F10 /* DataModel.xcdatamodeld */,
 				840881BC19BBD19200E79BD0 /* YKInfoViewController.h */,
 				840881BD19BBD19200E79BD0 /* YKInfoViewController.m */,
 				8458200F19BA447C00853C15 /* Main.storyboard */,

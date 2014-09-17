@@ -18,7 +18,7 @@
 @dynamic idValue;
 @dynamic thumbURL;
 @dynamic title;
-@dynamic newRelationship;
+@dynamic owner;
 @dynamic tag;
 
 @end
