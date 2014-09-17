@@ -20,5 +20,6 @@
 - (NSURL *)lowQualityURL;
 - (NSURL *)mediumQualityURL;
 - (NSURL *)highQualityURL;
+- (NSURL *)veryHighQualityURL;
 
 @end

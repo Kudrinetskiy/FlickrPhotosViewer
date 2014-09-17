@@ -35,7 +35,7 @@
     dispatch_async(downloadPhotoQueue, ^{
         PSRFlickrPhoto * photo = self.infoes[indexPath.row];
         NSString * info = [photo.info objectForKey:@"title"];
-        NSURL * url = [photo highQualityURL];
+        NSURL * url = [photo veryHighQualityURL];
         NSData * data = [NSData dataWithContentsOfURL:url];
         UIImage * image = [UIImage imageWithData:data];
         

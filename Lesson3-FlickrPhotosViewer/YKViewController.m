@@ -44,7 +44,7 @@
     self.searchOptions.itemsLimit = 99;
     self.searchOptions.extra = @[@"url_c"];
     
-    [self loadPhotos];
+    [self loadPhoto];
 }
 
 - (IBAction)dismissKeyboard:(id)sender
@@ -54,7 +54,7 @@
 
 #pragma mark - Private methods
 
-- (void)loadPhotos
+- (void)loadPhoto
 {
     dispatch_queue_t getPhotoQueue = dispatch_queue_create("getPhotoQueue", nil);
     dispatch_async(getPhotoQueue, ^{
@@ -75,7 +75,8 @@
                 self.showButton.hidden = NO;
                 [self.searchButton setBackgroundImage:image forState:UIControlStateNormal];
                 
-                [self loadMorePhotos];
+                int i = 0;
+                [self loadPhotoWithSDWebImageAtIndex:i];
             });
         }
         else {
@@ -88,24 +89,23 @@
     });
 }
 
-- (void)loadMorePhotos
+- (void)loadPhotoWithSDWebImageAtIndex:(int)i
 {
-    
-    dispatch_queue_t downloadPhotosQueue = dispatch_queue_create("downloadPhotosQueue", nil);
-    dispatch_async(downloadPhotosQueue, ^{
+    UIImageView * imageView = [UIImageView new];
+    NSURL * url = [self.infoes[i] mediumQualityURL];
+    i++;
+    [imageView sd_setImageWithURL:url completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        [self.images replaceObjectAtIndex:i - 1 withObject:imageView.image];
         
-        for (int i = 0; i < [self.infoes count]; i++) {
-            NSURL * url = [self.infoes[i] mediumQualityURL];
-            NSData * data = [NSData dataWithContentsOfURL:url];
-            UIImage * image = [UIImage imageWithData:data];
-            [self.images replaceObjectAtIndex:i withObject:image];
+        if (i < [self.infoes count]) {
+            [self loadPhotoWithSDWebImageAtIndex:i];
         }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
+        else {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             [self.delegate addYKViewControllerDidLoadAllPhotos:self];
-        });
-    });
+            NSLog(@"delegation");
+        }
+    }];
 }
 
 #pragma mark - Segue

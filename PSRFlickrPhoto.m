@@ -57,6 +57,11 @@
     return [self urlForQualityTag:@"b"];
 }
 
+- (NSURL *)veryHighQualityURL
+{
+    return [self urlForQualityTag:@"o"];
+}
+
 - (NSURL *)urlForQualityTag:(NSString *)qualityTag
 {
     NSString *photoURLString = [NSString stringWithFormat:@"http://farm%@.static.flickr.com/%@/%@_%@_%@.jpg", [self.info objectForKey:@"farm"], [self.info objectForKey:@"server"], [self.info objectForKey:@"id"], [self.info objectForKey:@"secret"], qualityTag];

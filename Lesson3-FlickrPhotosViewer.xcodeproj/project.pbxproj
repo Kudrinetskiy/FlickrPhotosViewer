@@ -156,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				8400908419BA636300D481D1 /* FlickrAPI */,
-				8458200F19BA447C00853C15 /* Main.storyboard */,
 				8458200C19BA447C00853C15 /* YKAppDelegate.h */,
 				8458200D19BA447C00853C15 /* YKAppDelegate.m */,
 				8458203219BA4B1100853C15 /* YKPhotoCell.h */,
@@ -167,6 +166,7 @@
 				8400907419BA57AC00D481D1 /* YKPhotoViewController.m */,
 				840881BC19BBD19200E79BD0 /* YKInfoViewController.h */,
 				840881BD19BBD19200E79BD0 /* YKInfoViewController.m */,
+				8458200F19BA447C00853C15 /* Main.storyboard */,
 				8458201519BA447C00853C15 /* Images.xcassets */,
 				8458200419BA447C00853C15 /* Supporting Files */,
 			);
@@ -475,6 +475,7 @@
 				INFOPLIST_FILE = "Lesson3-FlickrPhotosViewer/Lesson3-FlickrPhotosViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -490,6 +491,7 @@
 				INFOPLIST_FILE = "Lesson3-FlickrPhotosViewer/Lesson3-FlickrPhotosViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
