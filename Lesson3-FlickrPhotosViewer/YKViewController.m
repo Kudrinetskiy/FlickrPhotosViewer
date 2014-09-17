@@ -75,7 +75,6 @@
                 self.showButton.hidden = NO;
                 [self.searchButton setBackgroundImage:image forState:UIControlStateNormal];
                 
-                int i = 0;
                 [self loadMorePhotos];
             });
         }
@@ -87,24 +86,6 @@
             });
         }
     });
-}
-
-- (void)loadPhotoWithSDWebImageAtIndex:(int)i
-{
-    UIImageView * imageView = [UIImageView new];
-    NSURL * url = [self.infoes[i] mediumQualityURL];
-    i++;
-    [imageView sd_setImageWithURL:url completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        [self.images replaceObjectAtIndex:i - 1 withObject:imageView.image];
-        
-        if (i < [self.infoes count]) {
-            [self loadPhotoWithSDWebImageAtIndex:i];
-        }
-        else {
-            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-            [self.delegate addYKViewControllerDidLoadAllPhotos:self];
-        }
-    }];
 }
 
 - (void)loadMorePhotos
